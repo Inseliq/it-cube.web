@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Отзывы путешественников</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  header {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+  }
+  .intro {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #2e8b57;
+  }
+  .text {
+    font-size: 0.95em;
+    text-align: center;
+  }
+  @media(max-width: 1000px){
+    .reviews {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Отзывы путешественников со всего мира</h1>
+</header>
+
+<div class="intro">
+  <p>
+    Наши путешественники делятся впечатлениями о своих приключениях! Ознакомьтесь с отзывами и вдохновляйтесь на новые путешествия.
+  </p>
+</div>
+
+<div class="reviews">
+
+  <div class="review-card">
+    <div class="name">Ирина, Россия</div>
+    <div class="text">
+      "Это было незабываемое путешествие! Организация была отличной, и я увидела мир с новой стороны. Спасибо!"
+    </div>
+  </div>
+  
+
+  <div class="review-card">
+    <div class="name">Марк, Германия</div>
+    <div class="text">
+      "Мои мечты сбылось! Индивидуальный тур по Африке был потрясающим, много новых впечатлений!"
+    </div>
+  </div>
+  
+
+  <div class="review-card">
+    <div class="name">Анна, Великобритания</div>
+    <div class="text">
+      "Спасибо за организацию! Путешествие по Юго-Восточной Азии было просто фантастическим."
+    </div>
+  </div>
+  
+
+</div>
+
+</html>

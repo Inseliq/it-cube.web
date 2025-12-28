@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharlotan.store</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на Sharlotan.store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Главная страница</h2>
+            <p></p>
+            <button id="toggleButton">Каталог</button>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы продаем новую и б/у технику apple</p>
+        </section>
+
+        <section id="contact">
+            <h2>Вход в аккаунт</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Войти</button></button>
+            </form>
+        </section>
+
+        <section id="catalog">
+            <h2>Каталог товаров</h2>
+
+            <!-- Категория: Телефоны -->
+            <section class="category" id="phones">
+                <h3>Телефоны</h3>
+                <div class="catalog-grid">
+                    <div class="product-card">
+                        <img src="https://avatars.mds.yandex.net/get-goods_pic/10811877/hat25cb8ef0e3ece2e7a4d7d6baa4afcdc6/orig" alt="iPhone 15 128GB" class="product-image">
+                        <h3>iPhone 15 128GB</h3>
+                        <p class="product-price">54 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                 <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/1/5/67c587c4e9429.jpg" alt="iPhone 16e 128Gb White" class="product-image">
+                        <h3>iPhone 16e 128Gb White</h3>
+                        <p class="product-price">50 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                     <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/1/5/67d437b528f79.jpg" alt="iPhone 16 128Gb Teal eSIM+SIM" class="product-image">
+                        <h3>iPhone 16 128Gb UltraMarine eSIM+SIM</h3>
+                        <p class="product-price">60 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                     <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/1/5/66f14c89f0e99.jpg" alt="iPhone 16 Plus 128Gb Pink eSIM+SIM" class="product-image">
+                        <h3>iPhone 16 Plus 128Gb Pink eSIM+SIM</h3>
+                        <p class="product-price">66 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/1/5/66f14bd32d72e.jpg" alt="iPhone 16 Pro 128Gb White Titanium eSIM+SIM" class="product-image">
+                        <h3>iPhone 16 Pro 128Gb White Titanium eSIM+SIM</h3>
+                        <p class="product-price">90 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Категория: Компьютеры -->
+            <section class="category" id="computers">
+                <h3>Компьютеры</h3>
+                <div class="catalog-grid">
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c79180dd0.jpg" alt="MacBook Pro 16.2~ M1 Pro 2021 16\512Gb Silver" class="product-image">
+                        <h3>MacBook Pro 16.2" M1 Pro 2021 16/512Gb Silver</h3>
+                        <p class="product-price">118 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6997a9d5.jpg" alt="MacBook Pro 14~ M3 2 Newton 2024 8\1Tb Silver" class="product-image">
+                        <h3>MacBook Pro 14" M3 2024 8/1Tb Silver</h3>
+                        <p class="product-price">124 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6be3d31a.jpg" alt="MacBook Pro 14~ M3 Pro 2024 18/512Gb Silver" class="product-image">
+                        <h3>MacBook Pro 14" M3 Pro 2024 18/512Gb Silver</h3>
+                        <p class="product-price">148 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6cb487be.jpg" alt="MacBook Pro 14 M3 Max 2024 36/1Tb Space Black" class="product-image">
+                        <h3>MacBook Pro 14" M3 Max 2024 36/1Tb Space Black</h3>
+                        <p class="product-price">335 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6d70302f.jpg" alt="MacBook Pro 16 M3 Pro 2024 18/512Gb Silver" class="product-image">
+                        <h3>MacBook Pro 16" M3 Pro 2024 18/512Gb Silver</h3>
+                        <p class="product-price">263 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6e5b5e98.jpg" alt="MacBook Pro 16 M3 Max 2024 36/1Tb Space Black" class="product-image">
+                        <h3>MacBook Pro 16" M3 Max 2024 36/1Tb Space Black</h3>
+                        <p class="product-price">347 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c6f2e6574.jpg" alt="MacBook Pro 14 M4 2024 16/512Gb Space Black" class="product-image">
+                        <h3>MacBook Pro 14" M4 2024 16/512Gb Space Black</h3>
+                        <p class="product-price">158 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+<div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/3/331/67f7c7208ba30.jpg" alt="MacBook Pro 14 M4 Max 2024 36/1Tb Space Black" class="product-image">
+                        <h3>MacBook Pro 14" M4 Max 2024 36/1Tb Space Black</h3>
+                        <p class="product-price">302 490 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+
+                
+                </div>
+            </section>
+
+            <!-- Категория: Наушники -->
+            <section class="category" id="headphones">
+                <h3>Наушники</h3>
+                <div class="catalog-grid">
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/458/459/65368b8c0c0dd.jpg" alt="AirPods Pro 2" class="product-image">
+                        <h3>AirPods Pro 2 USB-C</h3>
+                        <p class="product-price">19 990 ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div>
+                   <div class="catalog-grid">
+                    <div class="product-card">
+                        <img src="https://edward-pnz.ru/img_goods/458/459/67545be83d6a2.jpg" alt="AirPods Max USB-C Purple" class="product-image">
+                        <h3>AirPods Max USB-C Purple</h3>
+                        <p class="product-price">47 990*- ₽</p>
+                        <button class="buy-btn">В корзину</button>
+                    </div> 
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 sharlotan.store. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

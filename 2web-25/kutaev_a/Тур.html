@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Туры по всему миру</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f1e8;
+    color: #333;
+    line-height: 1.6;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+
+  .btn-green {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    
+  }
+  .description-block{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .desc-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .desc-icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+
+  .section {
+    margin-top: 50px;
+  }
+
+
+  .section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  .list {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+  }
+
+  .list ol {
+    padding-left: 20px;
+  }
+
+  .list li {
+    margin-bottom: 10px;
+  }
+
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .feature {
+    width: 150px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .feature svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+            footer {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 2px solid #000000;
+            font-size: 0.9em;
+            color: #000000;
+        }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+
+  </div>
+  <nav>
+    <a href="./Тур.html">Главная</a>
+    <a href="./1-3days.html">Экскурсии 1-3 дня</a>
+    <a href="./individual.html">Индивидуальные туры</a>
+    <a href="./календарьТуров.html">Календарь туров</a>
+    <a href="./o_нас.html">Наши сервисы</a>
+    <a href="./отзывы.html">Отзывы</a>
+    <a href="./o.html">Контакты</a>
+  </nav>
+  <a class="btn-green" href="./signUp.html">Хочу с Вами</a>
+</header>
+
+<div class="container">
+
+
+  <h1>Экскурсии по всему миру</h1>
+
+
+
+  <div class="description">
+    <div class="desc-item">
+      <div class="desc-icon">🏛️</div>
+      <div>Клин. В этом городе провёл свои последние годы Пётр Ильич Чайковский. Главной темой бренда Клина стал звук, а слоган звучит так: «Так звучит Клин!».</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🕌</div>
+      <div>Мурманск. В основу концепции бренда Мурманска лёг тезис: «Мурманск — форпост России в Арктике». Среди достопримечательностей города — Мурманский океанариум, где выступают арктические тюлени, мемориальный комплекс «Морякам, погибшим в мирное время» и ледокол «Ленин».</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🌄</div>
+      <div>Сидней, Австралия. Визитная карточка Сиднея — его оперный театр, который регулярно попадает в списки лучших архитектурных сооружений мира. Можно любоваться им издалека, а можно изучать город со смотровой площадки на нём.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🕌</div>
+      <div>Прага, Чешская Республика. Смесь богатой истории, потрясающей архитектуры и сытной кухни превращает Прагу в один из самых посещаемых городов мира. Его непременно стоит посетить, чтобы ощутить дух Центральной Европы.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🚌</div>
+      <div>Уютная Орчха, базары Чанди-Чук и Старая деревня Кхаджурахо — атмосфера средневековой Индии.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🧍‍♂️</div>
+      <div>Лондон, Англия. Престижные музеи, известные уличные рынки и оживлённый финансовый центр способствуют тому, что Лондон стабильно удерживается в числе самых посещаемых городов в мире.</div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h2>На протяжении всего тура:</h2>
+    <div class="list">
+      <ol>
+        <li><strong>Профессиональный</strong> гид с высоким уровнем образования и хорошим русским языком.</li>
+        <li><strong>Новый транспорт</strong>.</li>
+        <li><strong>Спокойные водители</strong>.</li>
+        <li><strong>Отели </strong>.</li>
+        <li><strong>Насыщенная программа</strong> с билетами и активностями.</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h2>Поездка в Москву:</h2>
+
+  <div class="description-block">
+    <div class="desc-item">
+      <div class="desc-icon">🏛️</div>
+      <div class="desc-text">Красная площадь - Начнем наше путешествие с одного из самых узнаваемых символов России. Здесь мы сможем насладиться архитектурой и историей, прогуливаясь среди величественных зданий и памятников.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🕌</div>
+      <div class="desc-text">Московский Кремль - Погрузимся в историю страны, посетив этот уникальный архитектурный ансамбль. Захватывающий вид на Соборную площадь и возможность увидеть Алмазный фонд оставят незабываемые впечатления.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🌄</div>
+      <div class="desc-text">Третьяковская галерея - Познакомимся с богатой коллекцией русского искусства. Прогулка по галереям позволит насладиться шедеврами таких мастеров, как Репин, Айвазовский и многие другие.
+</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🕌</div>
+      <div class="desc-text">Парк Горького - Отдохнем от экскурсий и насладимся природой в одном из крупнейших парков Москвы. Летом здесь можно покататься на колесе обозрения, а зимой – на коньках на катке.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🚌</div>
+      <div class="desc-text">Оперный театр имени Станиславского - Полюбуемся на великолепное здание театра и посетим представление. Это отличная возможность погрузиться в мир классического искусства и насладиться великолепной постановкой.</div>
+    </div>
+    <div class="desc-item">
+      <div class="desc-icon">🧍‍♂️</div>
+      <div class="desc-text">Ночные прогулки по Арбату - Завершим наш день, прогуливаясь по старинной улице Арбат. Насладимся атмосферой творческих мастерских, попробуете уличную еду и послушаем уличных музыкантов.</div>
+    </div>
+  </div>
+      <footer>
+                        </section>
+        <section id="contacts" style="margin-top:40px;">
+            <h2>Контакты</h2>
+            <p><a href="#" style="color:#ff4500;">Vk</a> </p>
+            <p>E-mail:</p> berituroff@gmail.com
+            <p>Телефон:</p> +7 999 999 99 98
+            <p>Наши соцсети: 
+            </p>
+        </section>
+    </main>
+Все права защищены.2025. Тур.com
+    <div class="snow-container">
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+        <span class="snowflake">❄️</span>
+    </div>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff;
+    animation-name: snowfall;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0.7;
+}
+
+.snowflake:nth-child(odd) {
+    transform: rotateZ(-3deg);
+}
+
+.snowflake:nth-child(even) {
+    transform: rotateZ(3deg);
+}
+
+@keyframes snowfall {
+    from {transform: translateY(0);}
+    to   {transform: translateY(100vh);} 
+}
+
+
+.snowflake:nth-of-type(1) {animation-duration: 5s;}
+.snowflake:nth-of-type(2) {left: 10%; animation-duration: 7s;}
+.snowflake:nth-of-type(3) {right: 20%; animation-duration: 6s;}
+.snowflake:nth-of-type(4) {top: 30%; animation-duration: 8s;}
+.snowflake:nth-of-type(5) {bottom: 40%; animation-duration: 9s;}
+.snowflake:nth-of-type(6) {left: 50%; animation-duration: 10s;}
+.snowflake:nth-of-type(7) {right: 60%; animation-duration: 11s;}
+.snowflake:nth-of-type(8) {top: 70%; animation-duration: 12s;}
+.snowflake:nth-of-type(9) {bottom: 80%; animation-duration: 13s;}
+.snowflake:nth-of-type(10){left: 90%; animation-duration: 14s;}
+</style>
+    </footer>
+
+</body>
+</html>

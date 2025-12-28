@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Экскурсии на 1-3 дня по всему миру</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef2f3;
+    color: #333;
+  }
+  header {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .tour-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .tour-details {
+    padding: 15px;
+    flex: 1;
+  }
+  .tour-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2e8b57;
+  }
+  .tour-description {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+  }
+  .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #b22222;
+  }
+  @media(max-width: 1000px){
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Экскурсии 1-3 дня по всему миру</h1>
+</header>
+
+<div class="container">
+  <div class="tour-card">
+    <img src="./photo/paris.webp" alt="Париж">
+    <div class="tour-details">
+      <div class="tour-title">Париж — Город любви</div>
+      <div class="tour-description">
+        Однодневная экскурсия по знаменитым достопримечательностям Парижа: Эйфелева башня, Лувр, Нотр-Дам. Ощутите дух романтики и истории.
+      </div>
+      <div class="price">от 15000 руб.</div>
+    </div>
+  </div>
+  
+  <div class="tour-card">
+    <img src="./photo/rim.webp" alt="Рим">
+    <div class="tour-details">
+      <div class="tour-title">Рим — Вечный город</div>
+      <div class="tour-description">
+        Экскурсия на 2 дня по историческим памятникам: Колизей, Форум, Ватикан. Погрузитесь в атмосферу древнего Рима.
+      </div>
+      <div class="price">от 22000 руб.</div>
+    </div>
+  </div>
+  
+  <div class="tour-card">
+    <img src="./photo/bangkok.webp" alt="Бангкок">
+    <div class="tour-details">
+      <div class="tour-title">Бангкок — Экзотика и культура</div>
+      <div class="tour-description">
+        Однодневный тур по рынкам, храмам и дворцам. Откройте для себя яркую и насыщенную жизнь этого азиатского города.
+      </div>
+      <div class="price">от 18000 руб.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #add1ed, #a3def0, #bce7fa);
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #2a363b, #4d5c63, #607077);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(0, 0, 0);
+    font-weight: 700;
+    transition: .3s ease;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+nav li a:hover {
+    transform: scale(1.1);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 153, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+#hero {
+    height: calc(100vh - 100px); /* Высота заголовочной секции минус высота хедера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #add1ed, #a3def0, #bce7fa);
+    color: #000000;
+    position: relative;
+}
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax)(300px, 1fr);
+    margin-top: 50px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: solid 2px;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Реализация анимации снега */
+@keyframes fallingSnow {
+    0%   { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.snowflake {
+    position: fixed;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    mask-position: center;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-image: url(./2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.svg);
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fallingSnow 5s linear infinite;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+
+& .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+& .footer-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+& .contacts, .about, .social-media {
+  flex: 1;
+  text-align: left;
+}
+
+& .contacts ul, .social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+& .social-media a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+& .copyright {
+  text-align: center;
+  font-size: 14px;
+}
+}
+/* Устанавливаем разные скорости и положения снежинок */
+.snowflake:nth-child(1) { left: 10%; animation-duration: 3s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 4s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 5s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 6s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 7s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 8s; }
+.snowflake:nth-child(7) { left: 70%; animation-duration: 9s; }
+.snowflake:nth-child(8) { left: 80%; animation-duration: 10s; }
+.snowflake:nth-child(9) { left: 90%; animation-duration: 11s; }
+.snowflake:nth-child(10){ left: 100%; animation-duration: 12s; }
+
+#shoe {
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
+    transition: background-position 0.5s ease-in-out;
+    position: relative; /* Обеспечиваем правильное позиционирование текста */
+    z-index: 1; /* Устанавливаем высокий уровень наложения текста */
+}
+
+#shoe:hover {
+    background-position: 100% 0%;
+}
+
+#product-better {
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
+    transition: background-position 0.5s ease-in-out;
+    position: relative; /* Обеспечиваем правильное позиционирование текста */
+    z-index: 1; /* Устанавливаем высокий уровень наложения текста */
+    margin-left: 400px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
